@@ -1,17 +1,30 @@
 html {
     background-color: #1e2030;
+    height: 100%;
 }
 body {
+    min-height: 100%;
     margin: 1em;
     background-color: #24273a;
 }
 header {
     background-color: inherit;
 }
-p {
+p,h3,ul {
     color: #cad3f5;
 }
 h1,h2 {
     text-align: center;
+    color: #cad3f5;
+}
+a {
+    color: #f4dbd6;
+}
+footer {
+    background-color: #24273a;
+    position: absolute;
+    bottom: 0;
+}
+h4 {
     color: #cad3f5;
 }
