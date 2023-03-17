@@ -1,14 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Noto Sans");
 html {
     background-color: #1e2030;
     height: 100%;
 }
 body {
+    font-family: 'Noto Sans';
     min-height: 100%;
     margin: 1em;
     background-color: #24273a;
 }
 header {
     background-color: inherit;
+}
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
 }
 p,h3,ul {
     color: #cad3f5;
