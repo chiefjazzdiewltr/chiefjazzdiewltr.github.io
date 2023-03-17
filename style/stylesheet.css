@@ -28,6 +28,11 @@ article {
     flex: 3;
     padding: 10px;
 }
+@media screen and (max-width: 700px) {
+    section {
+        flex-direction: column;
+    }
+}
 p,h3,ul {
     color: #cad3f5;
 }
