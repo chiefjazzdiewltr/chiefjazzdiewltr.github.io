@@ -3,31 +3,71 @@
     <head>
         <meta charset="UTF-8">
         <link href="style/stylesheet.css" rel="stylesheet">
+        <script src="script/main.js"></script>
     </head>
-    <body>
-        <header>
+    <div class="wrapper">
+        <header class="page-header">
             <h1>ようこそザックのウェブページへ！</h1>
             <h2>(Welcome to Zac's Place)</h2>
         </header>
-        <section>
-            <nav>
-                <h3>Appropriate Links</h3>
-                <ul>
-                    <li><a href="https://steamcommunity.com/id/chiefjazzdiewltr/">Steam</a></li>
-                    <li><a href="https://www.reddit.com/user/chiefjazzdiewltr">Reddit</a></li>
-                </ul>
-            </nav>
-            <article>
-                <h3>About Me</h3>
-                <p>
-                    Hi I'm Zac, I am an tech enthusiast from New Zealand. I enjoy vintage tech.
-                    I go by he/him pronouns. I'm a Computer Science and Mathematics Major, but that
-                    doesn't mean you ask me to do your math homework (lol).
-                </p>
-            </article>
-        </section>
-    </body>
-    <footer>
-        <h4>Theme from <a href="https://github.com/catppuccin">catppuccin</a></h4>
-    </footer>
+        <body>
+            <div class="body">
+                <div class="leftcolumn">
+                    <nav>
+                        <h3>Appropriate Links</h3>
+                        <ul>
+                            <li><a href="https://steamcommunity.com/id/chiefjazzdiewltr/">Steam</a></li>
+                            <li><a href="https://www.reddit.com/user/chiefjazzdiewltr">Reddit</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="rightcolumn">
+                    <article>
+                        <h3>About Me</h3>
+                        <p>
+                            Hi I'm Zac, I am an tech enthusiast from New Zealand. I enjoy vintage tech.
+                            I go by he/him pronouns. I'm a Computer Science and Mathematics Major, but that
+                            doesn't mean you ask me to do your math homework (lol). 
+                        </p>
+                        
+                        <h3>Main Belief</h3>
+                        <p>
+                            I believe that things should be done just because they are possible
+                            and not be limited by pitiful boundaries like traditionalism.
+                            That doesn't mean I have any issue with people running Windows, macOS or Linux
+                            on whatever, I don't care. I just like pushing the boundaries of what's possible.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Some of my Vintage Tech</h3>
+                        <div class="slideshow-container">
+                            <div class="slide fade block ">
+                                <img src="image/powerbook1400c.jpg">
+                            </div>
+                            <div class="slide fade">
+                                <img src="image/emate300.jpg">
+                            </div>
+                            <div class="slide fade">
+                                <img src="image/compaq1100.jpg">
+                            </div>
+                            <div class="slide fade">
+                                <img src="image/macportable.jpg">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                          </div>
+                    </article>
+                </div>
+            </div>
+        </body>
+        <footer class="page-footer">
+            <h4>Theme from <a href="https://github.com/catppuccin">catppuccin</a></h4>
+        </footer>
+    </div>
 </html>
