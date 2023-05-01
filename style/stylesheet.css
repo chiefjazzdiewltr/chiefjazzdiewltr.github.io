@@ -9,13 +9,20 @@ html {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-.page-header, .page-footer {
+.page-header {
     flex-grow: 0;
     flex-shrink: 0;
 }
+.page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
 .badges {
     text-align: center;
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -36,7 +43,7 @@ header {
 .block {
     display: block;
 }
-img {
+img.slideshow-container {
     position: relative;
     height: auto;
     bottom: 0;
@@ -140,5 +147,6 @@ footer {
     background-color: #24273a;
 }
 h4 {
+    margin-left: 1em;
     color: #cad3f5;
 }
