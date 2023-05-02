@@ -139,9 +139,21 @@ h1,h2 {
     text-align: center;
     color: #cad3f5;
 }
-a {
+a, .cool {
+    display: inline-block;
     color: #f4dbd6;
     text-decoration: none;
+}
+.cool::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #f4dbd6;
+    transition: width .3s;
+}
+.cool:hover::after {
+    width: 100%;
 }
 footer {
     background-color: #24273a;
