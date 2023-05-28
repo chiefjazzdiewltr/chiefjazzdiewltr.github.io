@@ -1,14 +1,14 @@
 /* Basic Global settings */
 @font-face {
-    font-family: 'Noto Sans';
-    src: local("Noto Sans"), url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-family: 'Noto Sans';
+  src: local("Noto Sans"), url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
 }
 
 html {
-    font-family: 'Noto Sans';
-    background-color: #1e2030;
-    height: 100%;
-    color: #cad3f5;
+  font-family: 'Noto Sans';
+  background-color: #1e2030;
+  height: 100%;
+  color: #cad3f5;
 }
 
 h1,h2 {
