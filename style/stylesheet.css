@@ -95,7 +95,7 @@ img.slideshow-container {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev::after,.next::after {
+.prev::after,.next::after,.dead::after {
   all: initial;
 }
 .prev:hover,.next:hover {
@@ -125,7 +125,6 @@ img.slideshow-container {
     opacity: 1
   }
 }
-
 
 /* Flexbox */
 .body {
