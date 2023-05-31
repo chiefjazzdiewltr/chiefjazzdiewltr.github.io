@@ -132,11 +132,11 @@ img.slideshow-container {
   grid-template-columns: 1fr 2fr; 
   grid-template-rows: 2fr 1fr; 
 }
-.navlinks {
+.uppernav {
   grid-area: 1 / 1 / 2 / 2;
   text-align: center;
 }
-.mathinput {
+.lowernav {
   grid-area: 2 / 1 / 3/ 2;
   text-align: center;
 }
@@ -166,11 +166,11 @@ img.slideshow-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr; 
   }
-  .navlinks {
+  .uppernav {
     grid-area: 1 / 1 / 2 / -1;
     text-align: center;
   }
-  .mathinput {
+  .lowernav {
     grid-area: 2 / 1 / 3 / -1;
     text-align: center;
   }
