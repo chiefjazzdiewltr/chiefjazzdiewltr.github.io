@@ -5,6 +5,7 @@
 }
 
 html {
+  cursor: url("../cursors/svg/default.svg"), auto;
   font-family: 'Noto Sans';
   background-color: #1e2030;
   height: 100%;
@@ -12,7 +13,12 @@ html {
 }
 
 h1,h2 {
+  cursor: url("../cursors/svg/textcursor.svg"), auto;
   text-align: center;
+}
+
+h3,p {
+  cursor: url("../cursors/svg/textcursor.svg"), auto;
 }
 
 /* Making the lists pretty */
@@ -21,6 +27,7 @@ ul {
   padding-left: 0;
 }
 a {
+  cursor: url("../cursors/svg/handgrabbing.svg"), auto;
   display: inline-block;
   color: #f4dbd6;
   text-decoration: none;
@@ -78,8 +85,8 @@ img.slideshow-container {
   margin: auto;
 }
 .prev,.next {
+  cursor: url("../cursors/svg/handgrabbing.svg"), auto;
   color: inherit;
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
