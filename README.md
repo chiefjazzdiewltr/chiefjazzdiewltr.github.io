@@ -15,9 +15,10 @@ If there happen to be any issues that I don't catch, or whatever then feel free 
 
 [Main Deployment](https://chiefjazzdiewltr.github.io)
 
-### TODO List
+### Feature List/TODO List
 
 - [x] Build base for website
-- [ ] ~~Add TeX support for random nonsense~~ 
+- [ ] ~~Add TeX support for random nonsense~~
+- [x] Switched my slideshow to use snap scrolling instead of using javascript
 - [ ] Add something in lower nav
 - [ ] Add some cool features (Long Term Goal)

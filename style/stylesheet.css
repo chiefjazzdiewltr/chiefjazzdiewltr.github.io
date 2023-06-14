@@ -66,71 +66,27 @@ body {
   background-color: #24273a;
 }
 
-/* Slideshow configuration */
-.slide {
-  display: none;
-}
-.block {
-  display: block;
-}
-img.slideshow-container {
-  position: relative;
-  height: auto;
-  bottom: 0;
-  vertical-align: middle;
-}
+/* Scrolling Slideshow */
 .slideshow-container {
-  max-width: 533px;
-  position: relative;
+  width: 533px;
+  height: 720px;
   margin: auto;
+  overflow-x: scroll;
+  position: relative;
+  scroll-snap-type: x mandatory;
 }
-.prev,.next {
-  cursor: url("../cursors/svg/handgrabbing.svg"), auto;
-  color: inherit;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.element {
+  width: 533px;
+  height: 716px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
 }
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev::after,.next::after,.dead::after {
-  all: initial;
-}
-.prev:hover,.next:hover {
-  background-color: #24273AB6;
-}
-
-/* Fade animation of Slideshow */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
+.wrapping {
+  width: 2132px;
 }
 
 /* Flexbox */
