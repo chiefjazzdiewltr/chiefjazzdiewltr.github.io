@@ -78,6 +78,8 @@ body {
 .element {
   width: 533px;
   height: 716px;
+  margin-left: 10px;
+  margin-right: 10px;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
   display: flex;
@@ -86,7 +88,7 @@ body {
   float: left;
 }
 .wrapping {
-  width: 2132px;
+  width: 2212px;
 }
 
 /* Flexbox */
@@ -109,6 +111,14 @@ body {
 }
 .lg-view {
   display: none;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion) {
+  a::after {
+    transition: opacity .3s ease-in-out;
+    opacity: 0%;
+  }
 }
 
 /* Mobile Screen */
