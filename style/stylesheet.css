@@ -115,6 +115,9 @@ body {
 
 /* Reduced Motion */
 @media (prefers-reduced-motion) {
+  a:hover {
+    color: #f0c6c6;
+  }
   a::after {
     transition: opacity .3s ease-in-out;
     opacity: 0%;
