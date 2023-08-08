@@ -1,3 +1,13 @@
+/* CSS Variables */
+:root {
+  --background: #1e1e2e;
+  --secondary-background: #11111b;
+  --heading-text: #cdd6f4;
+  --text: #bac2de;
+  --links: #89b4fa;
+  --selection-color: #585b70;
+}
+
 /* Basic Global settings */
 @font-face {
   font-family: 'Noto Sans';
@@ -5,20 +15,14 @@
 }
 
 html {
-  cursor: url("../cursors/svg/default.svg"), auto;
   font-family: 'Noto Sans';
-  background-color: #1e2030;
+  background-color: var(--secondary-background);
   height: 100%;
   color: #cad3f5;
 }
 
 h1,h2 {
-  cursor: url("../cursors/svg/textcursor.svg"), auto;
   text-align: center;
-}
-
-h3,p {
-  cursor: url("../cursors/svg/textcursor.svg"), auto;
 }
 
 /* Making the lists pretty */
@@ -27,9 +31,8 @@ ul {
   padding-left: 0;
 }
 a {
-  cursor: url("../cursors/svg/handgrabbing.svg"), auto;
   display: inline-block;
-  color: #f4dbd6;
+  color: var(--links);
   text-decoration: none;
 }
 a::after {
@@ -37,7 +40,7 @@ a::after {
   display: block;
   width: 0%;
   height: 2px;
-  background: #f4dbd6;
+  background: var(--links);
   transition: width .3s;
 }
 a:hover::after {
@@ -63,7 +66,7 @@ a:hover::after {
 body {
   font-family: 'Noto Sans';
   margin: 1em;
-  background-color: #24273a;
+  background-color: var(--background);
 }
 
 /* Scrolling Slideshow */
@@ -113,10 +116,18 @@ body {
   display: none;
 }
 
+/* Selection Text Colour */
+::-moz-selection {
+  background-color: var(--selection-color);
+}
+::selection {
+  background-color: var(--selection-color);
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion) {
   a:hover {
-    color: #f0c6c6;
+    color: var(--links);
   }
   a::after {
     transition: opacity .3s ease-in-out;
