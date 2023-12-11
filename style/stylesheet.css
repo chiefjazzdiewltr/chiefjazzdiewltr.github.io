@@ -20,7 +20,11 @@ html {
   font-family: 'Noto Sans';
   background-color: var(--secondary-background);
   height: 100%;
-  color: #cad3f5;
+  color: var(--heading-text);
+}
+
+p {
+  color: var(--text);
 }
 
 h1,h2 {
